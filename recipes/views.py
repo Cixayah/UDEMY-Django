@@ -9,13 +9,19 @@ def home(request):
         context={
             "title": "Home",
             "content": "Welcome to the home page!",
-            
         },
     )
 
 
 def contact(request):
-    return HttpResponse("Hello, contact!")
+    return render(
+        request,
+        "recipes/contact.html",
+        context={
+            "title": "Contact",
+            "content": "Contact us!",
+        },
+    )
 
 
 def about(request):
