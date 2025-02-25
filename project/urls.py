@@ -1,11 +1,10 @@
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
-from recipes.views import home, contact, about
+from django.urls import include, path
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
-    path('contact/', contact),
-    path('about/', about),
+    path('', include('recipes.urls')),
+    # path('recipes', include('recipes.urls')), #dominio.com/recipes/path url filha
 ]
+
