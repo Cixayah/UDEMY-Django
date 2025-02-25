@@ -11,18 +11,3 @@ def home(request):
             "content": "Welcome to the home page!",
         },
     )
-
-
-def contact(request):
-    return render(
-        request,
-        "recipes/contact.html",
-        context={
-            "title": "Contact",
-            "content": "Contact us!",
-        },
-    )
-
-
-def about(request):
-    return HttpResponse("Hello, about!")
