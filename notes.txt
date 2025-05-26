@@ -1,0 +1,1 @@
+django-admin startproject projeto . <-- "." serve para criar uma pasta só, não projeto dentro de projeto.
