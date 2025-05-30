@@ -10,7 +10,7 @@ def contact(request):
     return HttpResponse('CONTATO')
 
 def about(request):
-    return HttpResponse('SOBRE')
+    return HttpResponse('<h1>SOBRE recipes.views')
 
 urlpatterns = [
     path('', home),

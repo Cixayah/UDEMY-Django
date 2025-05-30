@@ -1,4 +1,4 @@
 django-admin startproject project . <-- "." serve para criar uma pasta só, não projeto dentro de projeto.
 python manage.py runserver
 
-AULA 27
+AULA 22
